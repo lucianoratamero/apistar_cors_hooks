@@ -5,6 +5,4 @@ python:
 env:
   - APISTAR_VERSION=0.4.5
   - APISTAR_VERSION=0.5.4
-install:
-  - pip install -q apistar==$APISTAR_VERSION
 script: python setup.py test
