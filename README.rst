@@ -62,6 +62,10 @@ Be free to open an issue, contribute with PRs and contact me at ``luciano@ratame
 Changelog
 ~~~~~~~~~~~~
 
+0.1.1
+'''''
+- adds README.rst as long description on PyPI
+
 0.1.0
 '''''
 - initial version

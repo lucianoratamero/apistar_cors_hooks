@@ -7,6 +7,10 @@ def rel(*xs):
     return os.path.join(os.path.abspath(os.path.dirname(__file__)), *xs)
 
 
+with open(rel('README.rst'), "r", encoding='utf-8') as f:
+    long_description = f.read()
+
+
 with open(rel("apistar_cors_hooks.py"), "r") as f:
     version_marker = "__version__ = "
     for line in f:
@@ -25,7 +29,7 @@ setup(
     author_email='luciano@ratamero.com',
     version=version,
     description="CORS support for API Star via event hooks.",
-    long_description="https://github.com/lucianoratamero/apistar_cors_hooks",
+    long_description=long_description,
     packages=[],
     py_modules=["apistar_cors_hooks"],
     install_requires=[

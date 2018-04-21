@@ -4,7 +4,7 @@ from apistar.server import wsgi
 from wsgicors import CORS
 
 __all__ = ["CORSRequestHooks"]
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 
 class CORSRequestHooks:
